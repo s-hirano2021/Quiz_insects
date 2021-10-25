@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">チョウチョ　クイズ</string>
+
+    <string name="Poke_get">問題</string>
+    <string name="Poke_lizard">リザードン</string>
+    <string name="Poke_pikachu">ピカチュー</string>
+    <string name="Poke_fusigi">フシギダネ</string>
+
+    <string name="btn_ans1">答え１</string>
+    <string name="btn_ans2">答え２</string>
+    <string name="btn_ans3">答え３</string>
+
+
+    <string name="answer">せいかいです。</string>
+    <string name="boo">まちがえました。またちょうせんしてね。</string>
+
+
+    <string name="textchou">１０問正解　チョウチョマスター！</string>
+    <string name="btn_back">戻る</string>
+
+</resources>
