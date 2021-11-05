@@ -240,7 +240,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             binding.btnans2.setOnClickListener {
                 if (btnans2.text == lizardon[1]) {
-                    tvPoke.text = getString(R.string.answer)
+                    tvPoke.text = getString(R.string.answer2)
                     noans()
                 } else {
                     tvPoke.text = getString(R.string.boo)
