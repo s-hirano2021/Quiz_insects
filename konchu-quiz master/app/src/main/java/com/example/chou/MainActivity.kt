@@ -83,39 +83,39 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     //２問目
                 } else if (n == 1) {
                     imagePoke.setImageResource(R.drawable.asagi)
-                    tvPoke.text = ("アゲハ蝶の問題です")
+                    tvPoke.text = ("長い距離（きょり）を移動します。")
                     var quiz1 = pokemonquiz("マダラチョウ", "アサギマダラ", "ギフチョウ")
 
                     //３問目
                 } else if (n == 2) {
                     imagePoke.setImageResource(R.drawable.oomurasaki)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("大きなちょうでとてもはやく飛ぶことができる")
                     var quiz2 = pokemonquiz("アオムラサキ", "オオムラサキ", "ムラサキアゲハ")
                     //４問目
                 } else if (n == 3) {
                     imagePoke.setImageResource(R.drawable.miyamakarasu)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("幼虫はミカンがすき")
                     var quiz3 = pokemonquiz("クロアゲハ", "ミヤマカラスアゲハ", "カラスアゲハ")
                     // 5
                 } else if (n == 4) {
                     imagePoke.setImageResource(R.drawable.morufodaiana)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("南アメリカのとても珍しいちょうです。")
                     var quiz3 = pokemonquiz("モルフォチョウ", "モルフォダイアナ", "オーロラモルフォ")
                     // 6
                 } else if (n == 5) {
                     imagePoke.setImageResource(R.drawable.aosuji)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("公園でもよく見かけるよ")
                     var quiz3 = pokemonquiz("ミヤマカラスアゲハ", "アオスジアゲハ", "ジャコウアゲハ")
                     // 7
                 } else if (n == 6) {
                     imagePoke.setImageResource(R.drawable.jyakou)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("幼虫はずっと黒いまま")
                     var quiz3 = pokemonquiz("カラスアゲハ", "ジャコウアゲハ", "ミヤマカラスアゲハ")
                     // 8
                 } else if (n == 7) {
                     imagePoke.setImageResource(R.drawable.kiageha)
-                    tvPoke.text = ("つぎの問題")
-                    var quiz3 = pokemonquiz("ゴマダラチョウ", "キアゲハ", "オオムラサキ")
+                    tvPoke.text = ("ちょうになると前足の付け根が黒いのが特徴")
+                    var quiz3 = pokemonquiz("ゴマダラチョウ", "キアゲハ", "ナミアゲハ")
                     // 9
                 } else if (n == 8) {
                     imagePoke.setImageResource(R.drawable.chadoku)
@@ -129,22 +129,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     // 11
                 } else if (n == 10) {
                     imagePoke.setImageResource(R.drawable.himeasagi)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("八重山諸島にしかいません")
                     var quiz3 = pokemonquiz("ヒメギフチョウ", "ヒメアサギマダラ", "コヒョウモン")
                     //12
                 } else if (n == 11) {
                     imagePoke.setImageResource(R.drawable.tumaguro)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("羽にとくちょうがあるよ")
                     var quiz3 = pokemonquiz("コヒョウモン", "ツマグロヒョウモン", "オオゴマダラ")
                     //13
                 } else if (n == 12) {
                     imagePoke.setImageResource(R.drawable.oogoadara)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("大きいちょうちょです。")
                     var quiz3 = pokemonquiz("キアゲハ", "オオゴマダラ", "ルリタテハ")
                     //14
                 } else if (n == 13) {
                     imagePoke.setImageResource(R.drawable.oogomadarachou)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("日本のちょうではとても大きい")
                     var quiz3 = pokemonquiz("キアゲハ", "オオゴマダラ", "ルリタテハ")
                     //15
                 } else if (n == 14) {
@@ -154,12 +154,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     //16
                 } else if (n == 15) {
                     imagePoke.setImageResource(R.drawable.ruritatehayouchuu)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("ちょうになると名前の通り綺麗な色")
                     var quiz3 = pokemonquiz("カラスアゲハ", "ルリタテハ", "オオゴマダラ")
                     //17
                 } else if (n == 16) {
                     imagePoke.setImageResource(R.drawable.toribane)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("とても綺麗　日本にはいないよ")
                     var quiz3 = pokemonquiz("グリーンアゲハ", "トリバネアゲハ", "モルフォチョウ")
                     //18
                 } else if (n == 17) {
@@ -179,12 +179,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     //21
                 } else if (n == 20) {
                     imagePoke.setImageResource(R.drawable.kujyaku)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("羽のもようが・・・")
                     var quiz3 = pokemonquiz("アカボシチョウ", "クジャクチョウ", "ヘビチョウ")
                     //22
                 } else if (n == 21) {
                     imagePoke.setImageResource(R.drawable.kusunokiagehachou)
-                    tvPoke.text = ("つぎの問題")
+                    tvPoke.text = ("北アメリカにいます")
                     var quiz3 = pokemonquiz("アオジャコウアゲハ", "クスノキアゲハ", "ミヤマカラスアゲハ")
                     //23
                 } else if (n == 22) {
@@ -243,16 +243,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     tvPoke.text = getString(R.string.answer2)
                     noans()
                 } else {
-                    tvPoke.text = getString(R.string.boo)
+                    tvPoke.text = getString(R.string.boo2)
                     noans2()
                 }
             }
             binding.btnans3.setOnClickListener {
                 if (btnans3.text == lizardon[1]) {
-                    tvPoke.text = getString(R.string.answer)
+                    tvPoke.text = getString(R.string.answer3)
                     noans()
                 } else {
-                    tvPoke.text = getString(R.string.boo)
+                    tvPoke.text = getString(R.string.boo3)
                     noans2()
                 }
             }

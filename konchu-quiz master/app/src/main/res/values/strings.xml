@@ -13,11 +13,14 @@
 
     <string name="answer">せいかいです。</string>
     <string name="answer2">せいかいです。やったね！！</string>
+    <string name="answer3">すごい！その調子でがんばれ！！</string>
 
     <string name="boo">まちがえました。またちょうせんしてね。</string>
+    <string name="boo2">次はがんばってね。</string>
+    <string name="boo3">ざんねん！もう一度チャレンジだ。</string>
 
 
-    <string name="textchou">１０問正解　チョウチョマスター！</string>
+    <string name="textchou">１０問正解　ちょうちょマスター！</string>
     <string name="btn_back">戻る</string>
 
 </resources>
