@@ -35,14 +35,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val anscount: TextView = findViewById(R.id.anscount)
         anscount.text = "連続１０問正解めざしてがんばれ！"
 
-
-        //画像のファイルを読み込む処理
-        //binding.imageViewPoke.setImageResource(R.drawable.fusigi)
     }
 
     override fun onClick(v: View?) {
-
-
         //idの取得
         var imagePoke: ImageView = findViewById(R.id.imageViewPoke)
         var btnPoke: Button = findViewById(R.id.btnPoke)
@@ -53,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var btnclear: Button = findViewById(R.id.btnclear)
         val anscount: TextView = findViewById(R.id.anscount)
 
-        //Random()としていたらエラー表示のため、（）を削除することで起動した。
+        //ボタンクリック時の動作
         binding.btnPoke.setOnClickListener {
             if (i == 9) {
 
@@ -77,7 +72,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 btnans2.isEnabled = true
                 btnans3.isEnabled = true
 
+                //問題数
                 val n = Random.nextInt(24)
+                //問題　secondquizに正解を入力する。表示はランダム
                 if (n == 0) {
                     imagePoke.setImageResource(R.drawable.himejya)
                     tvPoke.text = ("これは簡単です")
@@ -209,10 +206,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         private fun pokemonquiz(firstquiz: String, secondquiz: String, thirdquiz: String) {
             /*pokemonquiz(var firstquiz: String,var secondquiz: String,var thirdquiz: String)
-        var　を入れた方ていたが、エラー表示されたため、削除　起動するようになった。
-        下記、繰り返し入力していたコードメソッドにて処理
+        var　を入れていたが、エラー表示されたため、削除　起動するようになった。
+        下記、コードメソッドにて処理
          */
-            //上記リスををシャッフルしてbtn(ボタンに表示させる)
+            //上記リストををシャッフルしてbtn(ボタンに表示させる)
             val list = listOf(0, 1, 2)
             val num = list.shuffled()
 
@@ -229,7 +226,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             btnans2.text = lizardon[num[1]]
             btnans3.text = lizardon[num[2]]
 
-            //btnを押した時の判定
+            //btnを押した時の判定　3択問題　２番目に正解を入力する。
             binding.btnans1.setOnClickListener {
                 if (btnans1.text == lizardon[1]) {
                     tvPoke.text = getString(R.string.answer)
