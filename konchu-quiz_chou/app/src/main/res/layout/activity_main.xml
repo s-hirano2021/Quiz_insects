@@ -12,32 +12,32 @@
         android:id="@+id/imageViewPoke"
         android:layout_width="250dp"
         android:layout_height="230dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anscount"
         app:srcCompat="@drawable/morufodaiana" />
 
     <Button
         android:id="@+id/btnPoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/Poke_get"
-        android:textSize="34sp"
-        app:backgroundTint="#D81B60"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/round_button"
+        android:text="@string/Poke_get"
+        android:textSize="28sp"
+        app:backgroundTint="#D81B60"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPoke" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvPoke"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
         android:background="#B4FDD835"
         android:gravity="center"
         android:text="@string/app_name"
@@ -45,29 +45,30 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:drawableTint="#E53935"
+        app:layout_constraintBottom_toTopOf="@+id/btnPoke"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewPoke" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPoke">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnans1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:background="@drawable/round_button"
             android:text="@string/btn_ans1"
             android:textSize="20sp"
-            app:backgroundTint="#FFA726"
-            android:background="@drawable/round_button"/>
+            app:backgroundTint="#FFA726" />
 
         <Button
             android:id="@+id/btnans2"
@@ -75,10 +76,10 @@
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:background="@drawable/round_button"
             android:text="@string/btn_ans2"
             android:textSize="20sp"
-            app:backgroundTint="#FFA726"
-            android:background="@drawable/round_button" />
+            app:backgroundTint="#FFA726" />
 
         <Button
             android:id="@+id/btnans3"
@@ -86,10 +87,10 @@
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:background="@drawable/round_button"
             android:text="@string/btn_ans3"
             android:textSize="20sp"
-            app:backgroundTint="#FFA726"
-            android:background="@drawable/round_button"/>
+            app:backgroundTint="#FFA726" />
     </LinearLayout>
 
     <TextView
@@ -101,17 +102,20 @@
         android:textColor="#1A237E"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnclear"
-        android:layout_width="80dp"
+        android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:text="スタート"
+        android:background="@drawable/round_button"
+        android:text="再チャレンジ"
         android:textSize="10sp"
         app:backgroundTint="#FFA726"
-        android:background="@drawable/round_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnPoke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPoke" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

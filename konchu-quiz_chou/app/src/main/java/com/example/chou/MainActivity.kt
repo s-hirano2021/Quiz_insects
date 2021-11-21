@@ -3,6 +3,8 @@ package com.example.chou
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -53,6 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             if (i == 9) {
 
                 anscount.text = "連続" + (i) + "問　正解です。"
+                btnPoke.text="がんばれ"
                 btnans1.isEnabled = true
                 btnans2.isEnabled = true
                 btnans3.isEnabled = true
@@ -204,6 +207,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
         }
+
+    //アプリバーにメニュを表示
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.restart ->{
+                recreate()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
         private fun pokemonquiz(firstquiz: String, secondquiz: String, thirdquiz: String) {
             /*pokemonquiz(var firstquiz: String,var secondquiz: String,var thirdquiz: String)
         var　を入れていたが、エラー表示されたため、削除　起動するようになった。
